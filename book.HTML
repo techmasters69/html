@@ -5,23 +5,13 @@
             background-color: rgb(0, 255, 170);
         }
         header{
-            background-color: rgb(18, 53, 90);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            background-color: rgb(24, 108, 198)
         }
         nav{
             background-color: aquamarine;
-            position: sticky;
-            top: 0;
-            z-index: 2;
-            display: flex;
-            justify-content: center;
         }
         #intro{
             background-color: azure;
-            font-family: Arial, Helvetica, sans-serif;
-            text-align: center;
         }
         main-section{
             background-color: blueviolet;
@@ -55,14 +45,31 @@
         tr{
             border: 3px solid black;
         }
-        .techer-info {
-            border-radius: 5px;
-            margin: 10px;
-            width: 40px;
-            box-shadow: 6px 0px 21px -3px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+        header {
+            grid-area: header;
+        }
+        nav {
+            grid-row: nav;
+        }
+        #intro {
+            grid-area: intro;
+        }
+        #main-section {
+            grid-area: main-section;
+        }
+        #bestsellers {
+            grid-area: bestsellers;
+        }
+        footer {
+            grid-area: footer;
+        }
+        .grid-container {
+            grid-template-columns: auto auto auto auto auto;
+            grid-template-areas: 
+            "header header header header intro"
+            "nav nav nav nav intro"
+            "main-section main-section main-section main-section bestsellers"
+            "footer footer footer footer footer"
         }
     </style>
         <title>book club</title>
@@ -71,9 +78,9 @@
         <div class="grid-container">
             <header>
         <h1>book club</h1>
-        <li><a href="https://www.youtube.com/watch?v=xvFZjo5PgG0">youtube</a></li>
-        <li><a href="https://www.youtube.com/watch?v=xvFZjo5PgG0">about</a></li>
-    <li><a href="https://www.youtube.com/watch?v=xvFZjo5PgG0">contact</a></li></header>
+        <li><a href="https://youtube.com/">youtube</a></li>
+        <li><a href="https://youtube.com/">about</a></li>
+    <li><a href="https://youtube.com/">contact</a></li></header>
         <h2>Open timing</h2>
         <table>
             <tr>
