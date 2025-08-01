@@ -1,43 +1,80 @@
 <html>
-    <head>
-        <title>contant display</title>
-        <style>
-            .pimg1, .pimg2, .pimg3{
-                position: relative;
-                opacity: o.70;
-                background-position: center;
-                background-size: cover;
-                background-repeat: no-repeat;
-                background-attachment: fixed;
-            }
-            .pimg1{
-                background-image:url('minecraft movie.jpg');
-                min-height: 100%;
-            }
-            .pimg2{
-                background-image:url('iStock-1514093059_708743(1).webp');
-                min-height: 100%;
-            }
-            .pimg1{
-                background-image:url('i\ am\ steve.jpg');
-                min-height: 100%;
-            }
-        </style>
-    </head>
-    <body>
-        <span class="border trans" style="font-size: 40px;">
-            <center>welcome all to this website</center>
-        </span>
-        <section class="section section-dark">
-            <h2>section 1</h2>
-            <p>a web devalopment involves a world wide web or an internet</p>
-        </section>
-        <div class="pimg3">
+
+<head>
+    <title>contant display</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .topnav {
+            overflow: hidden;
+            background-color: #333;
+        }
+        .topnav a {
+            float: left;
+            color: #1affa3; 
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        .topnav a:hover {
+            background-color: #ddd;
+            color:black;
+        }
+        .topnav a:active {
+            background-color: #ffe066;
+        }
+        .pimg1,
+        .pimg2,
+        .pimg3 {
+            position: relative;
+            opacity: o.70;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .pimg1 {
+            background-image: url('minecraft movie.jpg');
+            min-height: 100%;
+        }
+
+        .pimg2 {
+            background-image: url('iStock-1514093059_708743(1).webp');
+            min-height: 100%;
+        }
+
+        .pimg1 {
+            background-image: url('i\ am\ steve.jpg');
+            min-height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topnav">
+        <a class="active" href="#home">home</a>
+        <a href="#">about us</a>
+        <a href="#">gallery</a>
+        <a href="#">contact us</a>
+    </div>
+    <span class="border trans" style="font-size: 40px;">
+        <center>welcome all to this website</center>
+    </span>
+    <section class="section section-dark">
+        <h2>section 1</h2>
+        <p>a web devalopment involves a world wide web or an internet</p>
+    </section>
+    <div class="pimg3">
         <div class="ptext">
             <span class="border trans">
                 img to text
             </span>
         </div>
-        </div>
-    </body>
+    </div>
+</body>
+
 </html>
